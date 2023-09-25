@@ -1,20 +1,21 @@
 # Display Module Fonts
 
-Fonts to replicate LCD character displays, most of which are driven by
-HD44780 or compatible ICs.
+Fonts to replicate LCD character displays driven by HD44780 or
+compatible ICs, which appear to be the vast majority of them.
 
 All characters are in their proper Unicode codepoints, whereas in the
 IC controllers there's a character or two in non-standard character
 code positions.
 
-In addition to printable ASCII, each font has the following
-characters:
+In addition to printable ASCII (0x20–0x7e), each font has the
+following characters:
 
 -   U+2588 FULL BLOCK - useful as a backing layer or cursor.
--   U+2192 RIGHTWARDS ARROW - included in code 0x7E, in lieu of tilde.
--   U+2190 LEFTWARDS ARROW - included in code 0x7F.
+-   U+2192 RIGHTWARDS ARROW - included in code 0x7e, in lieu of tilde.
+-   U+2190 LEFTWARDS ARROW - included in code 0x7f.
 
-All fonts also include U+007E TILDE.  One of the variants had one.
+All fonts also include U+007E TILDE, whereas only one of the ICs had
+one.
 
 ## Variants
 
@@ -23,6 +24,11 @@ There are three slightly different variations:
 -   Display Module 1 - original HD44780
 -   Display Module 2 - HD44780U, rom code A00 - The HD44780U is used for most displays available for sale now.
 -   Display Module 3 - HD44780U, rom code A02
+
+## Formats
+
+Fonts are available in TrueType and BDF, though the BDFs are intended
+more as an intermediary format.
 
 ## Sources
 
