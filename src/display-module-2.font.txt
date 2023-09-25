@@ -6,8 +6,8 @@ FONT_ASCENT 7
 FONT_DESCENT 1
 SPACING "m"
 FOUNDRY "dse"
-FAMILY_NAME "hd44780"
+FAMILY_NAME "Display Module 2"
 WEIGHT_NAME "medium"
 SLANT "r"
 ENDPROPERTIES
-INCLUDE hd44780.chars.txt
+INCLUDE display-module-2.chars.txt
