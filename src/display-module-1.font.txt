@@ -9,5 +9,6 @@ FOUNDRY "dse"
 FAMILY_NAME "Display Module 1"
 WEIGHT_NAME "medium"
 SLANT "r"
+COPYRIGHT "Copyright (c) 2023 Darren Embry, SIL-OFL 1.1"
 ENDPROPERTIES
 INCLUDE display-module-1.chars.txt
