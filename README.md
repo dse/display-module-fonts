@@ -24,6 +24,13 @@ There are three slightly different variations:
 -   Display Module 2 - HD44780U, rom code A00 - The HD44780U is used for most displays available for sale now.
 -   Display Module 3 - HD44780U, rom code A02
 
+## Sources
+
+Data sheets are available for the
+[original](./src/data-sheets/hd44780-1985.pdf) and
+[current](./src/data-sheets/hd44780u-1998.pdf) controller chips.
+Fonts vary slightly.
+
 ## Copyright & License
 
 Copyright (c) 2023, Darren Embry (dsembry@gmail.com).
