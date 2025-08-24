@@ -1,8 +1,8 @@
-SRC_FONTS  := $(wildcard src/*.font.txt)
-SRC_CHARS  := $(patsubst src/%.font.txt,src/%.chars.txt,$(SRC_FONTS))
-TTFS       := $(patsubst src/%.font.txt,dist/ttf/%.ttf,$(SRC_FONTS))
-BDFS       := $(patsubst src/%.font.txt,dist/bdf/%.bdf,$(SRC_FONTS))
-SFDS       := $(patsubst src/%.font.txt,dist/sfd/%.sfd,$(SRC_FONTS))
+SRC_FONTS  := $(wildcard src/bitmap/*.font.txt)
+SRC_CHARS  := $(patsubst src/bitmap/%.font.txt,src/bitmap/%.chars.txt,$(SRC_FONTS))
+TTFS       := $(patsubst src/bitmap/%.font.txt,dist/ttf/%.ttf,$(SRC_FONTS))
+BDFS       := $(patsubst src/bitmap/%.font.txt,dist/bdf/%.bdf,$(SRC_FONTS))
+SFDS       := $(patsubst src/bitmap/%.font.txt,dist/sfd/%.sfd,$(SRC_FONTS))
 
 BDFBDF                 := ~/git/dse.d/perl-font-bdf/bin/bdf2bdf
 BDFBDF_OPTIONS         := --resolution-x=66 --resolution-y=61
