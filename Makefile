@@ -28,7 +28,7 @@ dist/ttf/%.ttf: dist/bdf/%.bdf Makefile
 	$(BITMAPFONT2TTF) $(BITMAPFONT2TTF_OPTIONS) $< $@.tmp.ttf
 	mv $@.tmp.ttf $@
 
-dist/bdf/%.bdf: src/%.font.txt src/%.chars.txt Makefile
+dist/bdf/%.bdf: src/bitmap/%.font.txt src/bitmap/%.chars.txt Makefile
 	mkdir -p dist/bdf || true
 	$(BDFBDF) $(BDFBDF_OPTIONS) $< > $@.tmp.bdf
 	mv $@.tmp.bdf $@
