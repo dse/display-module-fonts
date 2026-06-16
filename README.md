@@ -25,6 +25,17 @@ There are three slightly different variations:
 -   Display Module 2 - HD44780U, rom code A00 - The HD44780U is used for most displays available for sale now.
 -   Display Module 3 - HD44780U, rom code A02
 
+## All-Dots Charcters
+
+-   U+2588 FULL BLOCK - all dots on, 6 x 7 or 6 x 8 depending on which module is emulated
+-   U+2589 LEFT SEVEN EIGHTS BLOCK - left 5 columns of dots on, 5 x 7 or 5 x 8 depending on which module is emulated
+
+Private Use Area, all fonts:
+-   U+E057 - 5 x 7 all dots on
+-   U+E058 - 5 x 8 all dots on
+-   U+E067 - 6 x 7 all dots on
+-   U+E068 - 6 x 8 all dots on
+
 ## Formats
 
 Fonts are available in TrueType and BDF, though the BDFs are intended
