@@ -9,8 +9,8 @@
     </head>
     <body>
         <div class="container">
-            <div class="display-module__wrapper">
-                <div class="display-module display-module--1">
+            <div class="display-module display-module--font-1 display-module--theme-1 mb-3">
+                <div class="display-module__text">
                     DISPLAY MODULE FONTS<br>
                     &#160;!"#$%&'()*+,-./<br>
                     0123456789:;&lt;=&gt;?<br>
@@ -18,14 +18,56 @@
                     PQRSTUVWXYZ[\]^_<br>
                     `abcdefghijklmno<br>
                     pqrstuvwxyz{|}~
-                    <div id="clock" class="clock">
+                    <div id="clock" class="clock-time">
+                        00/00/0000 00:00:00
+                    </div>
+                </div>
+            </div>
+            <div class="display-module display-module--font-1 display-module--theme-2 mb-3">
+                <div class="display-module__text">
+                    DISPLAY MODULE FONTS<br>
+                    &#160;!"#$%&'()*+,-./<br>
+                    0123456789:;&lt;=&gt;?<br>
+                    @ABCDEFGHIJKLMNO<br>
+                    PQRSTUVWXYZ[\]^_<br>
+                    `abcdefghijklmno<br>
+                    pqrstuvwxyz{|}~
+                    <div id="clock2" class="clock-time">
+                        00/00/0000 00:00:00
+                    </div>
+                </div>
+            </div>
+            <div class="display-module display-module--font-1 display-module--theme-3 mb-3">
+                <div class="display-module__text">
+                    DISPLAY MODULE FONTS<br>
+                    &#160;!"#$%&'()*+,-./<br>
+                    0123456789:;&lt;=&gt;?<br>
+                    @ABCDEFGHIJKLMNO<br>
+                    PQRSTUVWXYZ[\]^_<br>
+                    `abcdefghijklmno<br>
+                    pqrstuvwxyz{|}~
+                    <div id="clock3" class="clock-time">
+                        00/00/0000 00:00:00
+                    </div>
+                </div>
+            </div>
+            <div class="display-module display-module--font-1 display-module--theme-4 mb-3">
+                <div class="display-module__text">
+                    DISPLAY MODULE FONTS<br>
+                    &#160;!"#$%&'()*+,-./<br>
+                    0123456789:;&lt;=&gt;?<br>
+                    @ABCDEFGHIJKLMNO<br>
+                    PQRSTUVWXYZ[\]^_<br>
+                    `abcdefghijklmno<br>
+                    pqrstuvwxyz{|}~
+                    <div id="clock4" class="clock-time">
                         00/00/0000 00:00:00
                     </div>
                 </div>
             </div>
         </div>
         <script>
-            const clock = document.getElementById("clock");
+            const clocks = Array.from(document.querySelectorAll(".clock-time"));
             function update() {
                 const date = new Date();
                 const YYYY = ("0000" + String(date.getFullYear())).slice(-4);
@@ -38,7 +80,9 @@
                 if (date.getTime() % 1000 >= 500) {
                     str = str.replace(/:/g, " ");
                 }
-                clock.innerHTML = str;
+                for (const clock of clocks) {
+                    clock.innerHTML = str;
+                }
             }
             function start() {
                 update();

@@ -23,11 +23,34 @@
         --color: #eee;
     }
 }
+
+.display-module--theme-1 {
+    --display-module-background-color: #f80;
+    --display-module-color: #222;
+    --display-module-off-opacity: 0.06;
+}
+.display-module--theme-2 {
+    --display-module-background-color: #000;
+    --display-module-color: #ccf;
+    --display-module-off-opacity: 0.02;
+    --text-shadow: 0 0 8px rgb(204, 204, 255, 1);
+}
+.display-module--theme-3 {
+    --display-module-background-color: #ccf;
+    --display-module-color: #309;
+    --display-module-off-opacity: 0.03;
+}
+.display-module--theme-4 {
+    --display-module-background-color: #56e;
+    --display-module-color: #124;
+    --display-module-off-opacity: 0.03;
+}
+
 html, body {
     background-color: var(--background-color);
     color: var(--color);
 }
-.display-module__wrapper {
+.display-module {
     background-color: var(--display-module-background-color);
     color: var(--display-module-color);
     border: 4px ridge #666;
@@ -37,41 +60,42 @@ html, body {
     box-shadow: inset 2px 2px 8px rgba(0,0,0,0.5);
     font-family: "Display Module 1 (Web)";
     line-height: 1;
+    text-shadow: var(--text-shadow);
 }
-.display-module {
+.display-module__text {
     position: relative;
     width: 100%;
     min-height: 8em;
     overflow: hidden;
 }
 
-.display-module__wrapper {
+.display-module {
     font-size: 24px;
 }
-.display-module {
+.display-module__text {
     width: 20ch;
 }
 @media (min-width: 576px) {
-    .display-module__wrapper {
+    .display-module {
         font-size: 24px;
     }
-    .display-module {
+    .display-module__text {
         width: 30ch;
     }
 }
 @media (min-width: 768px) {
-    .display-module__wrapper {
+    .display-module {
         font-size: 24px;
     }
-    .display-module {
+    .display-module__text {
         width: 40ch;
     }
 }
 
-.display-module--1 { font-family: "Display Module 1 (Web)"; }
-.display-module--2 { font-family: "Display Module 2 (Web)"; }
-.display-module--3 { font-family: "Display Module 3 (Web)"; }
-.display-module::before {
+.display-module--font-1 { font-family: "Display Module 1 (Web)"; }
+.display-module--font-2 { font-family: "Display Module 2 (Web)"; }
+.display-module--font-3 { font-family: "Display Module 3 (Web)"; }
+.display-module__text::before {
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -105,11 +129,15 @@ html, body {
     max-width: 800px;
     margin: 0 auto;
 }
-.display-module__wrapper {
+.display-module {
     margin: 0 auto;
 }
-.clock {
+.clock-time {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
 }
