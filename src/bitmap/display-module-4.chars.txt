@@ -1304,7 +1304,7 @@ U+XXXX
 |  #  |
 +  #  +
 |     |
-U+XXXX
+U+231C TOP LEFT CORNER
 |###  |
 |#    |
 |#    |
@@ -1313,7 +1313,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+231F BOTTOM RIGHT CORNER
 |     |
 |     |
 |     |
