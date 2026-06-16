@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title>Display Module Fonts</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="display-module__wrapper">
+                <div class="display-module display-module--1">
+                    DISPLAY MODULE FONTS<br>
+                    &#160;!"#$%&'()*+,-./<br>
+                    0123456789:;&lt;=&gt;?<br>
+                    @ABCDEFGHIJKLMNO<br>
+                    PQRSTUVWXYZ[\]^_<br>
+                    `abcdefghijklmno<br>
+                    pqrstuvwxyz{|}~
+                    <div id="clock" class="clock">
+                        00/00/0000 00:00:00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const clock = document.getElementById("clock");
+            function update() {
+                const date = new Date();
+                const YYYY = ("0000" + String(date.getFullYear())).slice(-4);
+                const MM   = ("00" + String(date.getMonth())).slice(-2);
+                const DD   = ("00" + String(date.getDate())).slice(-2);
+                const hh   = ("00" + String(date.getHours())).slice(-2);
+                const mm   = ("00" + String(date.getMinutes())).slice(-2);
+                const ss   = ("00" + String(date.getSeconds())).slice(-2);
+                let str = MM + "/" + DD + "/" + YYYY + " " + hh + ":" + mm + ":" + ss;
+                if (date.getTime() % 1000 >= 500) {
+                    str = str.replace(/:/g, " ");
+                }
+                clock.innerHTML = str;
+            }
+            function start() {
+                update();
+                setTimeout(start, 500 - Date.now() % 1000);
+            }
+            start();
+        </script>
+    </body>
+</html>

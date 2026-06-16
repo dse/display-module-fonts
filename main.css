@@ -1,0 +1,115 @@
+@font-face {
+    src: url("dist/ttf/display-module-1.ttf");
+    font-family: "Display Module 1 (Web)";
+}
+@font-face {
+    src: url("dist/ttf/display-module-2.ttf");
+    font-family: "Display Module 2 (Web)";
+}
+@font-face {
+    src: url("dist/ttf/display-module-3.ttf");
+    font-family: "Display Module 3 (Web)";
+}
+:root {
+    --background-color: #eee;
+    --color: #222;
+    --display-module-background-color: #ff8000;
+    --display-module-color: #222222;
+    --display-module-off-opacity: 0.06;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #444;
+        --color: #eee;
+    }
+}
+html, body {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+.display-module__wrapper {
+    background-color: var(--display-module-background-color);
+    color: var(--display-module-color);
+    border: 4px ridge #666;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    width: max-content;
+    box-shadow: inset 2px 2px 8px rgba(0,0,0,0.5);
+    font-family: "Display Module 1 (Web)";
+    line-height: 1;
+}
+.display-module {
+    position: relative;
+    width: 100%;
+    min-height: 8em;
+    overflow: hidden;
+}
+
+.display-module__wrapper {
+    font-size: 24px;
+}
+.display-module {
+    width: 20ch;
+}
+@media (min-width: 576px) {
+    .display-module__wrapper {
+        font-size: 24px;
+    }
+    .display-module {
+        width: 30ch;
+    }
+}
+@media (min-width: 768px) {
+    .display-module__wrapper {
+        font-size: 24px;
+    }
+    .display-module {
+        width: 40ch;
+    }
+}
+
+.display-module--1 { font-family: "Display Module 1 (Web)"; }
+.display-module--2 { font-family: "Display Module 2 (Web)"; }
+.display-module--3 { font-family: "Display Module 3 (Web)"; }
+.display-module::before {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    content:
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a"
+        "\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\e057\0a";
+    opacity: var(--display-module-off-opacity);
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.display-module__wrapper {
+    margin: 0 auto;
+}
+.clock {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
