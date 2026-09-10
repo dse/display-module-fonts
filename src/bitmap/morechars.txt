@@ -250,7 +250,7 @@ U+XXXX
 |#   #|
 + ####+
 |     |
-U+XXXX
+U+XXXX SUPERSCRIPT ZERO
 | ##  |
 |#  # |
 |#  # |
@@ -259,7 +259,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+XXXX SUPERSCRIPT ONE
 | #   |
 |##   |
 | #   |
@@ -268,7 +268,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+XXXX SUPERSCRIPT TWO
 | ##  |
 |#  # |
 |  #  |
@@ -277,7 +277,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+XXXX SUPERSCRIPT THREE
 |###  |
 |   # |
 | ##  |
@@ -286,7 +286,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+XXXX SUPERSCRIPT FOUR
 |  #  |
 | ##  |
 |# #  |
@@ -295,7 +295,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+XXXX SUPERSCRIPT FIVE
 |#### |
 |#    |
 |###  |
@@ -304,7 +304,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+XXXX SUPERSCRIPT SIX
 | ### |
 |#    |
 |###  |
@@ -313,7 +313,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+XXXX SUPERSCRIPT SEVEN
 |#### |
 |   # |
 |  #  |
@@ -322,7 +322,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+XXXX SUPERSCRIPT EIGHT
 | ##  |
 |#  # |
 | ##  |
@@ -331,7 +331,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+XXXX SUPERSCRIPT NINE
 | ##  |
 |#  # |
 | ### |
@@ -340,7 +340,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+XXXX VULGAR FRACTION ONE HALF
 |#   #|
 |#  # |
 |# #  |
@@ -349,7 +349,7 @@ U+XXXX
 |    #|
 +   # +
 |  ###|
-U+XXXX
+U+XXXX VULGAR FRACTION ONE QUARTER
 |#   #|
 |#  # |
 |# #  |
@@ -358,7 +358,7 @@ U+XXXX
 | # # |
 + ####+
 |   # |
-U+XXXX
+U+XXXX PLUS-MINUS SIGN
 |  #  |
 |  #  |
 |#####|
@@ -367,7 +367,7 @@ U+XXXX
 |     |
 +#####+
 |     |
-U+XXXX
+U+XXXX GREATER-THAN OR EQUAL TO
 | #   |
 |  #  |
 |   # |
@@ -376,7 +376,7 @@ U+XXXX
 |     |
 +#####+
 |     |
-U+XXXX
+U+XXXX LESS-THAN OR EQUAL TO
 |   # |
 |  #  |
 | #   |
@@ -385,7 +385,7 @@ U+XXXX
 |     |
 +#####+
 |     |
-U+XXXX
+U+XXXX MICRO SIGN
 |#   #|
 |#   #|
 |#   #|
@@ -421,7 +421,7 @@ U+XXXX
 |#####|
 +  #  +
 |     |
-U+XXXX
+U+XXXX BLACK HEART SUIT
 |     |
 | # # |
 |#####|
@@ -430,7 +430,7 @@ U+XXXX
 |  #  |
 +     +
 |     |
-U+XXXX
+U+XXXX BLACK DIAMOND SUIT
 |     |
 |  #  |
 | ### |
@@ -448,7 +448,7 @@ U+XXXX
 |  #  |
 +  #  +
 |     |
-U+XXXX
+U+XXXX UPPER LEFT CORNER
 |###  |
 |#    |
 |#    |
@@ -457,7 +457,7 @@ U+XXXX
 |     |
 +     +
 |     |
-U+XXXX
+U+XXXX LOWER RIGHT CORNER
 |     |
 |     |
 |     |
